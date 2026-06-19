@@ -1,3 +1,10 @@
+## 2026-06-19 — Update seasonal feature for Father's Day and soccer
+- **Author**: Simon Paige
+- **Branch**: main
+- **Audit**: PASSED
+- **Screenshots**: skipped
+- **Visual verify**: yes
+
 ## 2026-05-15 — Fix hours on spookier page to match main floor hours
 - **Author**: Simon Paige
 - **Branch**: main
