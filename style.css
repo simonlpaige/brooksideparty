@@ -413,7 +413,7 @@ img { max-width: 100%; height: auto; display: block; }
   .cat--featured, .cat--small, .cat--med { grid-column: span 12; }
 }
 
-/* Graduation feature */
+/* Seasonal feature */
 .feature {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -440,6 +440,8 @@ img { max-width: 100%; height: auto; display: block; }
   flex: none;
 }
 .feature-photo {
+  margin: 0;
+  min-width: 0;
   border-radius: var(--r-md);
   overflow: hidden;
   border: 1.5px solid var(--ink);
@@ -448,6 +450,19 @@ img { max-width: 100%; height: auto; display: block; }
   width: 100%; height: 100%;
   object-fit: cover;
   aspect-ratio: 4 / 3;
+}
+.feature-photo--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  width: 100%;
+  max-width: 100%;
+  align-self: center;
+  aspect-ratio: 4 / 3;
+}
+.feature-photo--split img {
+  min-width: 0;
+  max-width: 100%;
+  aspect-ratio: auto;
 }
 
 /* Photo strip */
