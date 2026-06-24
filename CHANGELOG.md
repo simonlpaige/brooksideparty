@@ -1,3 +1,10 @@
+## 2026-06-24 — Load match-day images eagerly
+- **Author**: Simon Paige
+- **Branch**: main
+- **Audit**: PASSED
+- **Screenshots**: C:\Users\simon\code\brooksideparty\screenshots\2026-06-24T19-04-01
+- **Visual verify**: yes
+
 ## 2026-06-24 — Add Orange Army match-day feature
 - **Author**: Simon Paige
 - **Branch**: main
