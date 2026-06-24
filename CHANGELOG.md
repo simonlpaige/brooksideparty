@@ -1,3 +1,10 @@
+## 2026-06-24 — Add Orange Army match-day feature
+- **Author**: Simon Paige
+- **Branch**: main
+- **Audit**: PASSED
+- **Screenshots**: C:\Users\simon\code\brooksideparty\screenshots\2026-06-24T18-56-47
+- **Visual verify**: yes
+
 ## 2026-06-19 — Add another Father's Day photo to seasonal feature
 - **Author**: Simon Paige
 - **Branch**: main

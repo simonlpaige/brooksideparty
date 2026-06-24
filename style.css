@@ -469,6 +469,21 @@ img { max-width: 100%; height: auto; display: block; }
   grid-column: 2;
   grid-row: 1 / span 2;
 }
+.feature-photo--quad img:last-child {
+  grid-column: auto;
+  grid-row: auto;
+}
+.feature-photo--quad {
+  gap: 10px;
+  border: 0;
+  overflow: visible;
+  border-radius: 0;
+}
+.feature-photo--quad img {
+  border: 1.5px solid var(--ink);
+  border-radius: var(--r-sm);
+  background: var(--paper);
+}
 
 /* Photo strip */
 .photo-strip {
