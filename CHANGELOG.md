@@ -1,3 +1,10 @@
+## 2026-07-04 — Add Independence Day right-now update
+- **Author**: Simon Paige
+- **Branch**: main
+- **Audit**: PASSED
+- **Screenshots**: C:\Users\simon\code\brooksideparty\screenshots\2026-07-04T15-57-24
+- **Visual verify**: yes
+
 ## 2026-06-24 — Load match-day images eagerly
 - **Author**: Simon Paige
 - **Branch**: main
