@@ -484,6 +484,31 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: var(--r-sm);
   background: var(--paper);
 }
+.feature-photo--nine {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  align-self: center;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+.feature-photo--nine img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1.5px solid var(--ink);
+  border-radius: var(--r-sm);
+  background: var(--paper);
+}
+@media (max-width: 900px) {
+  .feature-photo--nine {
+    width: min(100%, 620px);
+    margin-inline: auto;
+  }
+}
 
 /* Photo strip */
 .photo-strip {
