@@ -1,3 +1,8 @@
+## 2026-10-03 - Put the storefront first
+- Replaced the distant street view with a tighter front-facing photo of the sign, entrance, and window balloons.
+- Removed the default figure margin so the photo fills its column, and preserved its prepared crop on all screen sizes.
+- Updated homepage/contact share previews and the store schema image.
+
 ## 2026-10-03 - Make the site easier to use on phones
 - Kept the call button inside the mobile header with safe spacing on all main pages.
 - Slowed the marquee, restored balloon proportions, and added pause and reduced-motion behavior.

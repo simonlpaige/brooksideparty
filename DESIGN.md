@@ -68,3 +68,7 @@ The site has two modes -- regular and Spookier (Halloween). CSS custom props swa
 | Date | What changed |
 |------|-------------|
 | 2026-05-13 | Website-workflow migration: added scripts/, design-system/, required files |
+
+## Storefront photography - October 3, 2026
+
+Simon prefers the opening photo to clearly feature this store, its sign, and entrance. Use the tighter front-facing photo from _IFH6521.jpg, not the distant street-wide img-01.jpg. Preserve the prepared crop in the responsive layout; avoid showing neighboring storefronts as the primary subject.

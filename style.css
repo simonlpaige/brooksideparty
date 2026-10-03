@@ -914,3 +914,7 @@ h2 { line-height: 1.15; letter-spacing: -0.015em; }
 .tz-band.red { color: var(--bone); }
 .hero-details { margin-top: 20px; font-size: 14px; color: var(--ink-mute); }
 .hero-details a { text-decoration: underline; text-underline-offset: 4px; }
+
+/* The first photo shows the actual entrance and sign, without a second crop. */
+.hero-card { margin: 0; }
+.hero-card img { aspect-ratio: auto; height: auto; object-fit: contain; }
