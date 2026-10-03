@@ -1,3 +1,7 @@
+## 2026-10-03 - Use Simon's clearer storefront photo
+- Replaced img-01.jpg and its WebP version with the second supplied photo, showing an unobstructed sign and entrance.
+- Updated hero and share previews, preserving the complete frame.
+
 ## 2026-10-03 - Put the storefront first
 - Replaced the distant street view with a tighter front-facing photo of the sign, entrance, and window balloons.
 - Removed the default figure margin so the photo fills its column, and preserved its prepared crop on all screen sizes.
