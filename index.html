@@ -120,7 +120,7 @@
   </script>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 </head>
-<body>
+<body data-confetti="burst">
   <a class="skip" href="#main">Skip to main content</a>
 
   <header class="nav" role="banner">
@@ -459,6 +459,11 @@
     document.addEventListener("DOMContentLoaded", function () {
       var y = document.getElementById("yr");
       if (y) y.textContent = new Date().getFullYear();
+      document.addEventListener("click", function (e) {
+        if (!window.Confetti) return;
+        if (e.target.closest && e.target.closest("a, button, input, select, textarea")) return;
+        window.Confetti.pop(e.clientX, e.clientY);
+      });
 
     });
   </script>

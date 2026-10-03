@@ -1,3 +1,7 @@
+## 2026-10-03 - Bring back the confetti
+- Restored the homepage arrival burst and click-to-pop confetti at Simon's request.
+- Kept the existing reduced-motion behavior and interactive controls intact.
+
 ## 2026-10-03 - Use Simon's clearer storefront photo
 - Replaced img-01.jpg and its WebP version with the second supplied photo, showing an unobstructed sign and entrance.
 - Updated hero and share previews, preserving the complete frame.
