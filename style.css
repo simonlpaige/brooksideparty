@@ -112,52 +112,10 @@ img { max-width: 100%; height: auto; display: block; }
   backdrop-filter: saturate(140%) blur(10px);
   border-bottom: 1px solid var(--rule);
 }
-.nav-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 0;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-@media (max-width: 640px) {
-  .nav-inner { padding-left: 16px; padding-right: 16px; }
-  .brand { padding-left: 0; }
-}
-@media (max-width: 768px) {
-  .nav-inner .brand { margin-left: 8px; padding-left: 8px; }
-}
-
-/* Phone button - keep number from breaking across lines */
-.nav-links .btn,
-.nav-links .btn--primary {
-  white-space: nowrap;
-}
-
-/* Desktop: Ensure phone button matches standard button padding */
-.nav-links .btn--primary {
-  padding: 14px 22px;
-}
-/* Override nav-link inherited color so btn--primary always shows --paper text */
-.nav-links a.btn--primary { color: var(--paper); }
-
-.nav-phone-icon { 
-  display: none;
-  color: #000; /* Force black for visibility on red background */
-}
-@media (max-width: 768px) {
-  .nav-phone-label { display: none; }
-  .nav-phone-icon {
-    display: inline;
-    font-size: 18px;
-    line-height: 1;
-    color: #000; /* Force black for visibility on red background */
-  }
-  .nav-links .btn,
-  .nav-links .btn--primary {
-    padding: 12px 12px;
-  }
-}
+.nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 14px 24px; }
+.nav-inner .brand { flex-shrink: 0; }
+.nav-call { flex-shrink: 0; white-space: nowrap; }
+.call-short { display: none; }
 .brand {
   display: inline-flex;
   align-items: center;
@@ -310,33 +268,34 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex;
   width: max-content;
   white-space: nowrap;
-  animation: marquee 38s linear infinite;
+  animation: marquee var(--marquee-duration, 70s) linear infinite;
   will-change: transform;
   font-family: var(--display);
   font-weight: 700;
   font-size: 22px;
   color: var(--ink);
 }
-.marquee-track span {
+.marquee-track > span {
   display: inline-flex;
   align-items: center;
   gap: 14px;
-  padding-right: 48px; /* spacing lives on the item, not the container — makes -50% land exactly at loop point */
+  padding-right: 32px; /* spacing lives on the item, not the container — makes -50% land exactly at loop point */
 }
 .marquee-dot {
-  width: 10px; height: 10px; border-radius: 50%;
+  width: 10px; height: 12px; padding: 0; flex: 0 0 10px; border-radius: 50%; position: relative;
 }
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
 }
-/* Marquee speed is set by JS (180px/s) in index.html.
-   This fallback fires only if JS is disabled. */
-@media (max-width: 768px) {
-  .marquee-track { animation: marquee 8s linear infinite; }
-}
+.marquee-dot::after { content: ''; position: absolute; left: 3px; bottom: -3px; width: 4px; height: 3px; background: inherit; clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+.marquee-shell { position: relative; }
+.marquee-toggle { display: block; margin: 8px 24px 8px auto; min-height: 44px; padding: 8px 14px; font: inherit; font-size: 13px; background: var(--paper); border: 1px solid var(--ink); border-radius: var(--r-pill); color: var(--ink); cursor: pointer; }
+.marquee-toggle[hidden] { display: none; }
 @media (prefers-reduced-motion: reduce) {
-  .marquee-track { animation: none; }
+  .marquee-track { animation: none; width: auto; white-space: normal; flex-wrap: wrap; gap: 12px; padding: 0 24px; }
+  .marquee-track > span { padding-right: 0; font-size: 16px; }
+  .marquee-track > span:nth-child(n+7) { display: none; }
 }
 
 /* Section */
@@ -927,3 +886,31 @@ textarea.input { min-height: 140px; resize: vertical; }
   max-width: 100%;
   height: auto;
 }
+
+/* Refined header: a separate call action stays inside the mobile safe area. */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--blue); outline-offset: 4px; }
+section[id] { scroll-margin-top: 140px; }
+h2 { line-height: 1.15; letter-spacing: -0.015em; }
+.marquee-track { font-size: 20px; }
+@media (max-width: 1000px) {
+  .nav-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; row-gap: 4px; padding: 10px max(20px, env(safe-area-inset-left)) 8px max(20px, env(safe-area-inset-right)); }
+  .nav-inner .brand { grid-column: 1; grid-row: 1; margin: 0; padding: 0; }
+  .nav-inner .brand svg { width: min(220px, 100%); height: auto; }
+  .nav-call { grid-column: 2; grid-row: 1; padding: 10px 14px; gap: 7px; justify-content: center; }
+  .call-number { display: none; }
+  .call-short { display: inline; }
+  .nav-inner nav { grid-column: 1 / -1; grid-row: 2; min-width: 0; }
+  .nav-links { justify-content: center; flex-wrap: wrap; gap: 6px 22px; }
+  .nav-links li:has(.social-icon) { display: none; }
+  .nav-links a { font-size: 15px; padding: 10px 4px; }
+  .hero { padding-top: 36px; }
+}
+@media (max-width: 360px) { .nav-links { gap: 10px; } .nav-links a { font-size: 14px; } }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+
+/* Readable action and accent text on the dark visit/costume sections. */
+.visit a.btn, .visit a.btn:hover { color: var(--ink); }
+.spookier-page .option-card .num { color: #FF788B; }
+.tz-band.red { color: var(--bone); }
+.hero-details { margin-top: 20px; font-size: 14px; color: var(--ink-mute); }
+.hero-details a { text-decoration: underline; text-underline-offset: 4px; }

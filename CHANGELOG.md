@@ -1,3 +1,11 @@
+## 2026-10-03 - Make the site easier to use on phones
+- Kept the call button inside the mobile header with safe spacing on all main pages.
+- Slowed the marquee, restored balloon proportions, and added pause and reduced-motion behavior.
+- Clarified Visit & contact navigation and added homepage directions.
+- Replaced stale graduation/upcoming-season wording and removed automatic homepage confetti.
+- Completed llms.txt, included all three main pages in the sitemap, and linked structured entities.
+- Added optimized WebP photo delivery with original JPEG fallback, smaller share images, and intrinsic image dimensions. Corrected the contact-page balloon typo.
+
 ## 2026-07-04 — Add Independence Day right-now update
 - **Author**: Simon Paige
 - **Branch**: main

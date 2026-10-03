@@ -1,32 +1,32 @@
 # Brookside Party Warehouse
 
-> Brookside Party Warehouse — brooksideparty.com
+> Locally owned party supply store at 103 W 63rd Street in Brookside, Kansas City, Missouri.
 
-## What This Site Is
+## Visitor information
 
-TODO: One paragraph describing this business/organization and what it does. Write it in plain language that a non-expert would understand.
+- Address: 103 W 63rd Street, Kansas City, MO 64113.
+- Phone: 816-333-2332. Call for same-day balloon orders and availability.
+- Email: bkspartywarehouse@gmail.com.
+- Owner: Jerri Brandon.
+- Monday-Wednesday: 9 am-7 pm.
+- Thursday-Friday: 9 am-8 pm.
+- Saturday: 9 am-6 pm.
+- Sunday: 11 am-3 pm.
+- Free street parking and a small lot. The store is next to Chase Bank.
+- Holiday hours may differ. Call before making a special trip.
 
-## Who This Site Is For
+## What the store sells
 
-TODO: Describe the intended audience (local customers, business clients, community members, etc.)
+Balloons and helium filling, custom balloon bouquets, pinatas, themed tableware, cards, Caspari paper goods, wedding supplies, and party decorations. Chiefs and football party supplies are featured on the homepage while supplies last. The website is a guide to the store, not a live inventory feed or online checkout.
 
-## What You Can Do Here
+Spookier is the upstairs costume floor, open year-round. It includes costumes, masks, wigs, makeup, props, and animatronics. Confirm stock and service details by phone.
 
-- TODO: List the main things a visitor can do or find on this site
-- Example: Find hours and location, view our menu, contact us for a quote
+## Pages
 
-## Key Information
+- [Main floor and party supplies](https://brooksideparty.com/)
+- [Spookier: upstairs costumes](https://brooksideparty.com/spookier.html)
+- [Hours, directions, and contact form](https://brooksideparty.com/contact.html)
 
-- **Location**: TODO (city, state)
-- **Phone**: TODO
-- **Email**: TODO
-- **Hours**: TODO
+Use the contact form for general questions. For same-day orders, call the store. Hours and page information checked against the site's existing client information on October 3, 2026.
 
-## Contact
-
-TODO: Primary contact method for visitors who need help or have questions.
-
----
-
-*Site designed by Simon L. Paige — simonlpaige.com*
-
+Designed in KCMO by simonlpaige.com.
